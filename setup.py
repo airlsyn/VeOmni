@@ -43,18 +43,18 @@ def get_requires() -> List[str]:
         return lines
 
 
-CUDA_REQUIRE = ["liger-kernel>=0.4.1,<1.0"]
+CUDA_REQUIRE = ["liger-kernel>=0.4.1"]
 
-NPU_REQUIRE = ["torchvision>=0.16.0,<0.16.1"]
+NPU_REQUIRE = ["torchvision>=0.16.0"]
 
 EXTRAS_REQUIRE = {"dev": ["pre-commit>=4.0.0,<5.0", "ruff>=0.7.0,<1.0", "pytest>=6.0.0,<8.0", "expecttest>=0.3.0"]}
 
 BASE_REQUIRE = [
-    "datasets>=2.16.0,<=2.21.0",
-    "diffusers>=0.30.0,<=0.31.0",
-    "packaging>=23.0,<26.0",
-    "torchdata>=0.8.0,<1.0",
-    "transformers[torch]>=4.46.2,<4.52.0",
+    "datasets>=2.16.0",
+    "diffusers>=0.30.0",
+    "packaging>=23.0",
+    "torchdata>=0.8.0",
+    "transformers[torch]>=4.46.2",
     "tiktoken>=0.9.0",
     "blobfile>=3.0.0",
 ]
